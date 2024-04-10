@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <title>Frez</title>
+  <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Proza Libre' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.link {
+  font-family: 'Proza Libre'; /* Change font family here */
+  font-size: 16px; /* Change font size here */
+  /* Add any other styles as needed */
+}
+
+.underline {
+  text-decoration: underline; /* Underline the heading */
+}
+/*yes end*/
+/*slideshow*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 350px;
+  position: relative;
+  margin: auto;
+  margin-left: 250px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(159, 159, 159, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+img {
+  width: 350px;
+}
+.tex {
+  position: absolute;
+  top: 0; /* Adjust top position as needed */
+  left: 450px; /* Adjust left position to move the text beside the slideshow */
+  width: 450px; /* Adjust width as needed */
+}
+/*slideshow end*/
+
+</style>
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Homepage.html" class="link">Homepage</a>
+    <a href="Concept1.html" class="link">Concept #1</a>
+    <a href="Concept2.html" class="link">Concept #2</a>
+    <a href="Concept3.html" class="link">Concept #3</a>
+  </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<h1 class="underline" style="text-align:center ; font-family:'Courier New'; font-size: 50px;"><strong>Concpet #2</strong></h1>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="longskirt4.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="longskirt2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="longskirt3.png" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  <!-- Text beside slideshow -->
+  <div class="tex">
+    <p style="font-family:'Courier New'">
+      One way to express oneself is through fashion. You want to make a 
+      statement about who you are and how you want other people to see you. 
+      Individualism, authenticity, and fashion are important. Although we 
+      took current trends into consideration when designing, we wanted to 
+      emphasize uniqueness outside what is trending. Because we also have
+      a tendency to stick to conservative values. So this outfit invites 
+      you to think beyond the box! The concept was to combine layers, with 
+      pants layered at the bottom and a skirt that falls to create a lovely 
+      silhouette. It's also inspired by wrap-around pants/skirts that have 
+      gained popularity, it's a way to keep the silhouette simple yet sophisticated.
+      The design, like the third concept, was made with 
+      discard/scrap fabricsand follow a scrappy design through texture but follow 
+      a more simple and elevated silhouette.</p>
+  </div>
+</div>
+
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <title>Frez</title>
+  <link rel="icon" type="image/x-icon" href="favicon (2).ico">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Proza Libre' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.link {
+  font-family: 'Proza Libre'; /* Change font family here */
+  font-size: 16px; /* Change font size here */
+  /* Add any other styles as needed */
+}
+
+/*yes*/
+.content {
+  display: flex;
+}
+
+.content img {
+  margin-right: 10px;
+  display: block;
+}
+
+.content h3,
+.content p {margin: 0;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+  text-align: center;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%; /* Set a maximum width for the image */
+  max-height: 100%; /* Ensure the height adjusts proportionally */
+}
+div {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.underline {
+  text-decoration: underline; /* Underline the heading */
+}
+/*yes end*/
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Homepage.html" class="link">Homepage</a>
+  <a href="Concept1.html" class="link">Concept #1</a>
+  <a href="Concept2.html" class="link">Concept #2</a>
+  <a href="Concept3.html" class="link">Concept #3</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<h1 class="underline" style="text-align:center ; font-family:'Courier New'; font-size: 50px;"><strong>Concpet #3</strong></h1>
+<div class="container">
+  <div class="image">
+    <img src="shortskirts1.png" width="300" 
+    height="400" style = "margin-left: 100px;">
+  </div>
+  <div class="text" style="margin-right: 80px; font-family:'Courier New'">
+    <div>Concept of a multi-layered skirt, asymmetric in design with many rough
+      cuts. Main body is roughly hemmed with a zigzag stitch, pleated under-layer
+      as well as a wrap-around panel to add depth. The design, like the second
+      concept, was made with discard/scrap fabrics and follow a scrappy
+      design through texture but follow a more simple and elevated silhouette.</div>
+  </div>
+</div>
+</body>
+</html>
